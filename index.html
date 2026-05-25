@@ -25,6 +25,10 @@
 
 <body>
 
+    <!-- Dynamic Glowing Blobs for Premium Visuals -->
+    <div class="bg-glowing-blob blob-1"></div>
+    <div class="bg-glowing-blob blob-2"></div>
+
     <!-- HEADER / NAVIGATION -->
     <header class="header" id="header">
         <a href="#" class="logo" id="logo">
@@ -47,7 +51,7 @@
 
     <!-- HOME SECTION -->
     <section class="home" id="home">
-        <div class="home-content">
+        <div class="home-content reveal">
             <h1>Hi, It's <span>Prachi</span></h1>
             <h3>I'm a <span>Junior Web Developer</span></h3>
             <p>
@@ -82,18 +86,18 @@
         </div>
 
         <!-- HERO IMAGE -->
-        <div class="home-img">
+        <div class="home-img reveal">
             <img src="phpto.jpeg" alt="Prachi Agashe Profile Picture" id="home-profile-pic" />
         </div>
     </section>
 
     <!-- ABOUT SECTION -->
     <section class="about section-bg" id="about">
-        <div class="about-img">
+        <div class="about-img reveal">
             <img src="phpto.jpeg" alt="Prachi Agashe Portrait" id="about-profile-pic" />
         </div>
 
-        <div class="about-content">
+        <div class="about-content reveal">
             <h2 class="heading" style="text-align: left; margin-bottom: 2rem;">About <span>Me</span></h2>
             <h3>Who is Prachi?</h3>
             <p>
@@ -123,9 +127,9 @@
 
     <!-- TECHNICAL SKILLS SECTION -->
     <section class="skills" id="skills">
-        <h2 class="heading">Technical <span>Skills</span></h2>
+        <h2 class="heading reveal">Technical <span>Skills</span></h2>
 
-        <div class="skills-container">
+        <div class="skills-container reveal-stagger">
             <!-- LANGUAGES -->
             <div class="skill-card" id="skills-languages">
                 <div class="skill-icon"><i class='bx bx-code-alt'></i></div>
@@ -187,12 +191,12 @@
 
     <!-- EXPERIENCE SECTION -->
     <section class="experience section-bg" id="experience">
-        <h2 class="heading">Work <span>Experience</span></h2>
+        <h2 class="heading reveal">Work <span>Experience</span></h2>
 
         <div class="timeline">
             <!-- DARSHAN DIGITAL SOLUTIONS -->
             <div class="timeline-container right" id="exp-darshan">
-                <div class="timeline-content">
+                <div class="timeline-content reveal">
                     <span class="timeline-date">Jan 2026 - Present (4 Months)</span>
                     <h3>Junior Web Developer Intern</h3>
                     <div class="timeline-subtitle">Darshan Digital Solutions</div>
@@ -231,9 +235,9 @@
 
     <!-- EDUCATION SECTION -->
     <section class="education" id="education">
-        <h2 class="heading">My <span>Education</span></h2>
+        <h2 class="heading reveal">My <span>Education</span></h2>
 
-        <div class="education-grid">
+        <div class="education-grid reveal-stagger">
             <!-- MCA -->
             <div class="edu-card" id="edu-mca">
                 <span class="edu-year">2024 - 2026</span>
@@ -270,62 +274,131 @@
 
     <!-- PROJECTS SECTION -->
     <section class="projects section-bg" id="projects">
-        <h2 class="heading">Featured <span>Projects</span></h2>
+        <h2 class="heading reveal">Featured <span>Projects</span></h2>
 
-        <div class="projects-grid">
-            <!-- FASHION WEBSITE -->
-            <div class="project-card" id="project-fashion">
+        <div class="projects-grid reveal-stagger">
+            <!-- KHANDYAASANSKRUTI BILLING SYSTEM -->
+            <div class="project-card" id="project-khandya-billing">
+                <a href="https://github.com/prachiagashe/KhandyaaSanskruti-billing-system" target="_blank"
+                    rel="noopener noreferrer" class="card-link" aria-label="View Project on GitHub"></a>
                 <div class="project-img-container">
+                    <div class="project-github-badge">
+                        <i class='bx bxl-github'></i>
+                    </div>
                     <div class="project-img-placeholder">
-                        <i class='bx bx-shopping-bag'></i>
-                        <span>E-Commerce Platform</span>
+                        <i class='bx bx-dish'></i>
+                        <span>Billing & CRM Portal</span>
                     </div>
                 </div>
                 <div class="project-info">
-                    <h3>Responsive Fashion Website</h3>
+                    <h3>KhandyaaSanskruti Billing System</h3>
                     <p>
-                        Developed a responsive and user-friendly fashion e-commerce storefront. Features customized
-                        layouts, clean product catalogs, and highly interactive filtering controls for items browsing.
+                        A restaurant management application with an integrated admin panel to manage menu items, track
+                        orders, and control restaurant operations, along with a smooth customer ordering interface.
                     </p>
                     <div class="project-tech">
                         <span class="tech-badge">PHP</span>
                         <span class="tech-badge">Laravel</span>
+                        <span class="tech-badge">Blade</span>
                         <span class="tech-badge">MySQL</span>
-                        <span class="tech-badge">HTML5/CSS3</span>
                         <span class="tech-badge">JavaScript</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://github.com/prachiagashe" target="_blank" rel="noopener noreferrer"
-                            class="btn">View Code</a>
-                        <a href="#contact" class="btn btn-outline">Enquire</a>
+                        <span class="btn">View Project <i class='bx bx-right-arrow-alt'></i></span>
                     </div>
                 </div>
             </div>
 
-            <!-- CRM SYSTEM placeholder based on Experience to flesh out projects list -->
-            <div class="project-card" id="project-crm">
+            <!-- FLOWER -->
+            <div class="project-card" id="project-flower">
+                <a href="https://github.com/prachiagashe/Flower" target="_blank" rel="noopener noreferrer"
+                    class="card-link" aria-label="View Project on GitHub"></a>
                 <div class="project-img-container">
+                    <div class="project-github-badge">
+                        <i class='bx bxl-github'></i>
+                    </div>
                     <div class="project-img-placeholder">
-                        <i class='bx bx-group'></i>
-                        <span>CRM Portal</span>
+                        <i class='bx bx-spa'></i>
+                        <span>E-Commerce UI</span>
                     </div>
                 </div>
                 <div class="project-info">
-                    <h3>CRM – Bansal Classes</h3>
+                    <h3>Flower Store UI</h3>
                     <p>
-                        A customized customer relationship management platform built from scratch. Handles student
-                        lifecycle mapping, course registrations, query follow-ups, and admin logging dashboards.
+                        An online flower store UI displaying flowers and flower pots with prices, discounts, and a clean
+                        user-friendly design.
                     </p>
                     <div class="project-tech">
-                        <span class="tech-badge">Laravel</span>
-                        <span class="tech-badge">PHP</span>
-                        <span class="tech-badge">MySQL</span>
+                        <span class="tech-badge">HTML5</span>
+                        <span class="tech-badge">CSS3</span>
                         <span class="tech-badge">JavaScript</span>
-                        <span class="tech-badge">Bootstrap</span>
+                        <span class="tech-badge">UI/UX</span>
                     </div>
                     <div class="project-links">
-                        <a href="#experience" class="btn">Details</a>
-                        <a href="#contact" class="btn btn-outline">Enquire</a>
+                        <span class="btn">View Project <i class='bx bx-right-arrow-alt'></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TODOAPP-REACT -->
+            <div class="project-card" id="project-todoapp">
+                <a href="https://github.com/prachiagashe/Todoapp-react" target="_blank" rel="noopener noreferrer"
+                    class="card-link" aria-label="View Project on GitHub"></a>
+                <div class="project-img-container">
+                    <div class="project-github-badge">
+                        <i class='bx bxl-github'></i>
+                    </div>
+                    <div class="project-img-placeholder">
+                        <i class='bx bx-calendar-check'></i>
+                        <span>React Planner</span>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Todoapp-react</h3>
+                    <p>
+                        A React todo application that lets users add and manage tasks date-wise using a calendar with a
+                        simple and clean UI.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-badge">React.js</span>
+                        <span class="tech-badge">CSS3</span>
+                        <span class="tech-badge">JavaScript</span>
+                        <span class="tech-badge">Calendar API</span>
+                    </div>
+                    <div class="project-links">
+                        <span class="btn">View Project <i class='bx bx-right-arrow-alt'></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WEATHER-APP -->
+            <div class="project-card" id="project-weather">
+                <a href="https://github.com/prachiagashe/weather-app" target="_blank" rel="noopener noreferrer"
+                    class="card-link" aria-label="View Project on GitHub"></a>
+                <div class="project-img-container">
+                    <div class="project-github-badge">
+                        <i class='bx bxl-github'></i>
+                    </div>
+                    <div class="project-img-placeholder">
+                        <i class='bx bx-cloud-light-rain'></i>
+                        <span>Flask API Portal</span>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Weather App</h3>
+                    <p>
+                        A web-based weather application built using Python (Flask) that fetches real-time weather data
+                        using the OpenWeather API and displays temperature, humidity, wind speed, and other details.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">Flask</span>
+                        <span class="tech-badge">OpenWeather API</span>
+                        <span class="tech-badge">JavaScript</span>
+                        <span class="tech-badge">CSS3</span>
+                    </div>
+                    <div class="project-links">
+                        <span class="btn">View Project <i class='bx bx-right-arrow-alt'></i></span>
                     </div>
                 </div>
             </div>
@@ -334,42 +407,105 @@
 
     <!-- CERTIFICATIONS SECTION -->
     <section class="certifications" id="certifications">
-        <h2 class="heading">Certifications & <span>Achievements</span></h2>
+        <h2 class="heading reveal">Certifications & <span>Achievements</span></h2>
 
-        <div class="certs-grid">
+        <div class="certs-grid reveal-stagger">
             <!-- BOOTSTRAP -->
-            <div class="cert-card" id="cert-bootstrap">
+            <!-- <div class="cert-card" id="cert-bootstrap">
                 <div class="cert-icon"><i class='bx bx-award'></i></div>
                 <div class="cert-content">
                     <h4>Certified in Bootstrap</h4>
                     <p>Spoken Tutorial Program, IIT Bombay Initiative</p>
                 </div>
-            </div>
+            </div> -->
 
             <!-- CLOUD -->
-            <div class="cert-card" id="cert-cloud">
+            <!-- <div class="cert-card" id="cert-cloud">
                 <div class="cert-icon"><i class='bx bx-cloud'></i></div>
                 <div class="cert-content">
                     <h4>Cloud & Info Security</h4>
                     <p>Webinar on Cloud Technologies, Information Security & Future Opportunities</p>
                 </div>
-            </div>
+            </div> -->
 
             <!-- BATTLE WITH CODE -->
-            <div class="cert-card" id="cert-battle">
+            <!-- <div class="cert-card" id="cert-battle">
                 <div class="cert-icon"><i class='bx bx-code-block'></i></div>
                 <div class="cert-content">
                     <h4>Battle with Code SIMMC</h4>
                     <p>Participation Certificate - Coding Competition, Pune</p>
                 </div>
+            </div> -->
+
+            <!-- HACKERRANK JAVA -->
+            <div class="cert-card" id="cert-hackerrank-java">
+                <div class="cert-img-container">
+                    <a href="javahackerrank.png" target="_blank" aria-label="View Java Certificate">
+                        <img src="javahackerrank.png" alt="HackerRank Java Certificate" />
+                    </a>
+                </div>
+                <div class="cert-info-container">
+                    <div class="cert-icon"><i class='bx bxs-certification'></i></div>
+                    <div class="cert-content">
+                        <h4>HackerRank Java (Basic)</h4>
+                        <p>Verified proficiency in Java fundamentals, object-oriented concepts, logic constructs, and
+                            basic algorithm design.</p>
+                        <span class="cert-date">Earned: 23 Apr, 2025</span>
+                    </div>
+                </div>
             </div>
 
-            <!-- HACKERRANK -->
-            <div class="cert-card" id="cert-hackerrank">
-                <div class="cert-icon"><i class='bx bxs-certification'></i></div>
-                <div class="cert-content">
-                    <h4>HackerRank Certificates</h4>
-                    <p>Verified skills in Python and foundational Java programming languages</p>
+            <!-- NPTEL JAVA -->
+            <div class="cert-card" id="cert-nptel-java">
+                <div class="cert-img-container">
+                    <a href="nptel_java.png" target="_blank" aria-label="View NPTEL Java Certificate">
+                        <img src="nptel_java.png" alt="NPTEL Java Certificate" />
+                    </a>
+                </div>
+                <div class="cert-info-container">
+                    <div class="cert-icon"><i class='bx bx-award'></i></div>
+                    <div class="cert-content">
+                        <h4>NPTEL Java Certification</h4>
+                        <p>Prestigious programming certification in Java by NPTEL, validating concurrency, collections,
+                            packaging, and platform execution.</p>
+                        <span class="cert-date">Issued: 2025</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- HACKERRANK PYTHON -->
+            <div class="cert-card" id="cert-hackerrank-python">
+                <div class="cert-img-container">
+                    <a href="pythonhackerrank.png" target="_blank" aria-label="View Python Certificate">
+                        <img src="pythonhackerrank.png" alt="HackerRank Python Certificate" />
+                    </a>
+                </div>
+                <div class="cert-info-container">
+                    <div class="cert-icon"><i class='bx bxs-certification'></i></div>
+                    <div class="cert-content">
+                        <h4>HackerRank Python (Basic)</h4>
+                        <p>Verified proficiency in Python syntax, operations, dictionaries, lists, algorithms, and
+                            scripting basics.</p>
+                        <span class="cert-date">Earned: 19 Nov, 2024</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MOOC COURSE CERTIFICATE -->
+            <div class="cert-card" id="cert-mooc">
+                <div class="cert-img-container">
+                    <a href="mooc_certificate.jpg" target="_blank" aria-label="View MOOC Course Certificate">
+                        <img src="mooc_certificate.jpg" alt="MOOC Course Certificate" />
+                    </a>
+                </div>
+                <div class="cert-info-container">
+                    <div class="cert-icon"><i class='bx bxs-graduation'></i></div>
+                    <div class="cert-content">
+                        <h4>MOOC Coursera Certificate</h4>
+                        <p>Completed online specialization programs in Advanced Full Stack Web Development, REST APIs,
+                            and database engineering principles.</p>
+                        <span class="cert-date">Earned: 2025</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -377,7 +513,7 @@
 
     <!-- CONTACT SECTION -->
     <section class="contact section-bg" id="contact">
-        <div class="contact-container">
+        <div class="contact-container reveal">
             <div class="contact-info">
                 <h3>Let's work <span>together!</span></h3>
                 <p>
