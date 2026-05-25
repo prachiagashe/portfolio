@@ -1,5 +1,41 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+    // --- DYNAMIC CURSOR GLOW AURA ---
+    if (window.matchMedia('(pointer: fine)').matches) {
+        const glow = document.createElement('div');
+        glow.className = 'cursor-glow';
+        document.body.appendChild(glow);
+
+        let mouseX = window.innerWidth / 2;
+        let mouseY = window.innerHeight / 2;
+        let glowX = mouseX;
+        let glowY = mouseY;
+        const speed = 0.08;
+
+        window.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+        });
+
+        function animateGlow() {
+            glowX += (mouseX - glowX) * speed;
+            glowY += (mouseY - glowY) * speed;
+            glow.style.transform = `translate3d(${glowX}px, ${glowY}px, 0) translate3d(-50%, -50%, 0)`;
+            requestAnimationFrame(animateGlow);
+        }
+        animateGlow();
+
+        // Hover expansions for premium interactive feeling
+        const hoverTargets = document.querySelectorAll(
+            'a, button, .btn, .project-card, .cert-card, .skill-card, .contact-card, .social-icons a, .logo, #menu-icon'
+        );
+
+        hoverTargets.forEach(target => {
+            target.addEventListener('mouseenter', () => glow.classList.add('expand'));
+            target.addEventListener('mouseleave', () => glow.classList.remove('expand'));
+        });
+    }
+
     // --- MOBILE MENU TOGGLE ---
     const menuIcon = document.querySelector('#menu-icon');
     const navbar = document.querySelector('.navbar');
@@ -87,6 +123,47 @@ document.addEventListener('DOMContentLoaded', () => {
             contactForm.reset();
         });
     }
+
+    // --- TYPING ANIMATION ---
+    const words = [
+        "Full Stack Developer",
+        "Frontend Developer",
+        "Backend Developer",
+        "Laravel Developer",
+        "React.js Developer"
+    ];
+    let wordIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    const typingSpan = document.querySelector('.typing-text');
+
+    function typeEffect() {
+        if (!typingSpan) return;
+        const currentWord = words[wordIndex];
+        
+        if (isDeleting) {
+            typingSpan.textContent = currentWord.substring(0, charIndex - 1);
+            charIndex--;
+        } else {
+            typingSpan.textContent = currentWord.substring(0, charIndex + 1);
+            charIndex++;
+        }
+
+        let typeSpeed = isDeleting ? 45 : 95;
+
+        if (!isDeleting && charIndex === currentWord.length) {
+            typeSpeed = 1800; // Pause at the end of the typed word
+            isDeleting = true;
+        } else if (isDeleting && charIndex === 0) {
+            isDeleting = false;
+            wordIndex = (wordIndex + 1) % words.length;
+            typeSpeed = 400; // Pause before typing the next word
+        }
+
+        setTimeout(typeEffect, typeSpeed);
+    }
+
+    typeEffect();
 
     // --- SCROLL REVEAL ANIMATIONS ---
     const revealElements = document.querySelectorAll('.reveal, .reveal-stagger');
