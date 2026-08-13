@@ -140,7 +140,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function typeEffect() {
         if (!typingSpan) return;
         const currentWord = words[wordIndex];
-        
+
         if (isDeleting) {
             typingSpan.textContent = currentWord.substring(0, charIndex - 1);
             charIndex--;
