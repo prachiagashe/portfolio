@@ -1,0 +1,12 @@
+{
+  "name": "prachi-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio of Prachi Agashe",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "resend": "^3.2.0"
+  }
+}

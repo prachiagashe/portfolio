@@ -13,8 +13,14 @@
         content="Prachi Agashe, Web Developer, Junior Web Developer, Full Stack Developer, Laravel Developer, Portfolio, Pune, India, PHP Developer" />
     <meta name="author" content="Prachi Agashe" />
 
+    <!-- Open Graph / SEO Meta Tags -->
+    <meta property="og:title" content="Prachi Agashe | Junior Web Developer Portfolio" />
+    <meta property="og:description" content="Portfolio of Prachi Agashe, a passionate Junior Web Developer based in Pune, India." />
+    <meta property="og:image" content="photo.jpeg" />
+    <meta property="og:url" content="https://prachiagashe.github.io/portfolio/" />
+
     <!-- Favicon placeholder or styling -->
-    <link rel="icon" type="image/x-icon" href="phpto.jpeg" />
+    <link rel="icon" type="image/x-icon" href="photo.jpeg" />
 
     <!-- CSS stylesheet link -->
     <link rel="stylesheet" href="style.css" />
@@ -24,6 +30,9 @@
 </head>
 
 <body>
+
+    <!-- Cosmic Space Background Canvas -->
+    <canvas id="cosmic-canvas" aria-hidden="true"></canvas>
 
     <!-- Dynamic Glowing Blobs for Premium Visuals -->
     <div class="bg-glowing-blob blob-1"></div>
@@ -36,7 +45,7 @@
             Prachi <span>Agashe</span>
         </a>
 
-        <!-- Mobile Hamburguer menu icon -->
+        <!-- Mobile Hamburger menu icon -->
         <i class='bx bx-menu' id="menu-icon" aria-label="Toggle navigation menu"></i>
 
         <nav class="navbar" id="navbar">
@@ -47,18 +56,19 @@
             <a href="#education">Education</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
+            <a href="assets/Prachi_Agashe_Resume.pdf" download class="btn nav-resume-btn" style="padding: 0.6rem 1.5rem; font-size: 1.3rem; margin-left: 2rem;">Download Resume</a>
         </nav>
     </header>
 
     <!-- HOME SECTION -->
     <section class="home" id="home">
         <div class="home-content reveal">
-            <h1>Hi, It's <span>Prachi</span></h1>
-            <h3>I'm a <span class="typing-text"></span><span class="cursor">|</span></h3>
+            <h1 class="hero-headline">Turning User Problems into Product Solutions</h1>
+            <h3 class="hero-subtitle">
+                <span class="typing-text"></span><span class="cursor">|</span>
+            </h3>
             <p>
-                Passionate Full Stack Developer skilled in building scalable, responsive, and user-friendly web
-                applications using PHP (Laravel), React.js, JavaScript, HTML, CSS, and MySQL. Focused on creating clean
-                UI, efficient backend systems, and modern web experiences.
+                MCA graduate with hands-on internship experience in web development and business analysis. Skilled in PHP, Laravel, JavaScript, React, MySQL, and requirement analysis, with an interest in building practical and user-focused solutions.
             </p>
 
             <!-- TECH STACK BADGES -->
@@ -92,44 +102,42 @@
 
             <!-- ACTION BUTTONS -->
             <div class="btn-group">
-                <a href="#contact" class="btn" id="hire-btn">Hire Me</a>
-                <a href="assets/Prachi_Agashe_Resume.pdf" download class="btn btn-outline" id="cv-btn">Download CV</a>
+                <a href="#projects" class="btn" id="projects-btn">View Case Studies</a>
+                <a href="#projects" class="btn btn-outline" id="cv-btn">Explore Prototypes</a>
             </div>
         </div>
 
         <!-- HERO IMAGE -->
         <div class="home-img reveal">
-            <img src="phpto.jpeg" alt="Prachi Agashe Profile Picture" id="home-profile-pic" />
+            <img src="photo.jpeg" alt="Prachi Agashe Profile Picture" id="home-profile-pic" />
         </div>
     </section>
 
     <!-- ABOUT SECTION -->
     <section class="about section-bg" id="about">
         <div class="about-img reveal">
-            <img src="phpto.jpeg" alt="Prachi Agashe Portrait" id="about-profile-pic" />
+            <img src="photo.jpeg" alt="Prachi Agashe Portrait" id="about-profile-pic" />
         </div>
 
         <div class="about-content reveal">
-            <h2 class="heading" style="text-align: left; margin-bottom: 2rem;">About <span>Me</span></h2>
-            <h3>Who is Prachi?</h3>
+            <h2 class="heading text-left mb-2">About <span>Me</span></h2>
             <p>
-                I am a passionate Junior Web Developer based in Pune, India. I hold a strong foundation in MVC
-                architecture, building robust full-stack web applications, and designing beautiful frontends.
-                With practical industry internship experience, I've taken live products from initial requirements
-                gathering to successful production deployment.
+                I am an MCA graduate with hands-on internship experience in web development. I have worked with PHP, Laravel, MySQL, JavaScript, React, HTML, and CSS to develop responsive and database-driven web applications.
             </p>
             <p>
-                I am highly skilled in collaborative team settings and client communications, enabling me to build
-                features that exactly match user workflows and corporate needs.
+                During my internship, I worked on real-world web applications, debugging, testing, backend development, database integration, and understanding client requirements.
+            </p>
+            <p>
+                Along with development, I have an interest in Business Analysis, particularly requirement gathering, requirement analysis, business process understanding, documentation, and translating business needs into practical technical solutions.
             </p>
 
             <!-- QUICK PROFILE DETAILS -->
             <div class="about-details">
                 <div class="detail-item"><strong>Location:</strong> Pune, India</div>
-                <div class="detail-item"><strong>Email:</strong> prachiagashe621@gmail.com</div>
-                <div class="detail-item"><strong>Phone:</strong> +91 9356855036</div>
-                <div class="detail-item"><strong>Date of Birth:</strong> 12 May 2003</div>
-                <div class="detail-item"><strong>Languages:</strong> English, Hindi, Marathi</div>
+                <div class="detail-item"><strong>Education:</strong> MCA</div>
+                <div class="detail-item"><strong>Experience:</strong> 6 Months Internship</div>
+                <div class="detail-item"><strong>Primary Role:</strong> Web Developer</div>
+                <div class="detail-item"><strong>Additional Interest:</strong> Business Analysis</div>
                 <div class="detail-item"><strong>Availability:</strong> Open to Opportunities</div>
             </div>
 
@@ -152,15 +160,16 @@
                     <span class="skill-tag">JavaScript (ES6+)</span>
                     <span class="skill-tag">PHP</span>
                     <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">Python (Basic)</span>
                 </div>
             </div>
 
-            <!-- FRAMEWORKS -->
+            <!-- FRAMEWORKS & LIBRARIES -->
             <div class="skill-card" id="skills-frameworks">
                 <div class="skill-icon"><i class='bx bx-layer'></i></div>
-                <h3>Frameworks</h3>
+                <h3>Frameworks & Libraries</h3>
                 <div class="skill-list">
-                    <span class="skill-tag">Laravel (PHP)</span>
+                    <span class="skill-tag">Laravel</span>
                     <span class="skill-tag">React (Basic)</span>
                     <span class="skill-tag">Bootstrap</span>
                 </div>
@@ -176,7 +185,7 @@
                 </div>
             </div>
 
-            <!-- TOOLS -->
+            <!-- TOOLS & EDITORS -->
             <div class="skill-card" id="skills-tools">
                 <div class="skill-icon"><i class='bx bx-cog'></i></div>
                 <h3>Tools & Editors</h3>
@@ -184,18 +193,62 @@
                     <span class="skill-tag">Git</span>
                     <span class="skill-tag">GitHub</span>
                     <span class="skill-tag">VS Code</span>
+                    <span class="skill-tag">Claude AI</span>
+                    <span class="skill-tag">Antigravity</span>
                 </div>
             </div>
 
-            <!-- CONCEPTS -->
+            <!-- DEVELOPMENT CONCEPTS -->
             <div class="skill-card" id="skills-concepts">
                 <div class="skill-icon"><i class='bx bx-bulb'></i></div>
-                <h3>Concepts</h3>
+                <h3>Development Concepts</h3>
                 <div class="skill-list">
                     <span class="skill-tag">Responsive Design</span>
-                    <span class="skill-tag">API Integration</span>
                     <span class="skill-tag">MVC Architecture</span>
+                    <span class="skill-tag">OOP</span>
+                    <span class="skill-tag">API Integration</span>
                     <span class="skill-tag">Debugging & Testing</span>
+                    <span class="skill-tag">Web Application Development</span>
+                </div>
+            </div>
+
+            <!-- BA INTRO -->
+            <div class="skills-ba-intro">
+                Along with web development, I have a strong interest in Business Analysis, focusing on understanding requirements, analyzing business processes, documenting solutions, and connecting business needs with technical solutions.
+            </div>
+
+            <!-- BUSINESS ANALYSIS -->
+            <div class="skill-card ba-card" id="skills-business-analysis">
+                <div class="skill-icon"><i class='bx bx-line-chart'></i></div>
+                <h3>Business Analysis</h3>
+                <div class="skill-list">
+                    <span class="skill-tag">Requirement Gathering</span>
+                    <span class="skill-tag">Requirement Analysis</span>
+                    <span class="skill-tag">Business Process Analysis</span>
+                    <span class="skill-tag">Functional Requirements</span>
+                    <span class="skill-tag">Business Requirement Documentation</span>
+                    <span class="skill-tag">User Stories</span>
+                    <span class="skill-tag">Acceptance Criteria</span>
+                    <span class="skill-tag">Process Mapping</span>
+                    <span class="skill-tag">Problem Solving</span>
+                </div>
+            </div>
+
+            <!-- TECHNICAL & DATA ANALYSIS -->
+            <div class="skill-card ba-card" id="skills-tech-data">
+                <div class="skill-icon"><i class='bx bx-bar-chart-alt-2'></i></div>
+                <h3>Technical & Data Analysis</h3>
+                <div class="skill-list">
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">Excel</span>
+                    <span class="skill-tag">Data Validation</span>
+                    <span class="skill-tag">Basic Data Analysis</span>
+                    <span class="skill-tag">Web Application Analysis</span>
+                    <span class="skill-tag">API Understanding</span>
+                    <span class="skill-tag">SDLC</span>
+                    <span class="skill-tag">Agile/Scrum</span>
+                    <span class="skill-tag">UML</span>
+                    <span class="skill-tag">Flowcharts</span>
                 </div>
             </div>
         </div>
@@ -205,82 +258,93 @@
     <section class="experience section-bg" id="experience">
         <h2 class="heading reveal">Work <span>Experience</span></h2>
 
-        <div class="experience-grid">
-            <!-- LEFT COLUMN: HIGHLIGHTS & STATS -->
-            <div class="experience-summary reveal">
-                <div class="exp-summary-card">
-                    <h4><i class='bx bx-briefcase-alt-2'></i> Key Highlights</h4>
-                    <div class="exp-highlights-grid">
-                        <div class="highlight-item">
-                            <div class="highlight-icon"><i class='bx bx-calendar'></i></div>
-                            <div class="highlight-text">
-                                <h5>4+ Months</h5>
-                                <p>Internship Experience</p>
-                            </div>
-                        </div>
-                        <div class="highlight-item">
-                            <div class="highlight-icon"><i class='bx bx-laptop'></i></div>
-                            <div class="highlight-text">
-                                <h5>2 Live Projects</h5>
-                                <p>CRM & DMS Portals</p>
-                            </div>
-                        </div>
-                        <div class="highlight-item">
-                            <div class="highlight-icon"><i class='bx bx-server'></i></div>
-                            <div class="highlight-text">
-                                <h5>Full Stack</h5>
-                                <p>Backend & Frontend</p>
-                            </div>
-                        </div>
-                        <div class="highlight-item">
-                            <div class="highlight-icon"><i class='bx bx-chat'></i></div>
-                            <div class="highlight-text">
-                                <h5>Direct Interaction</h5>
-                                <p>Client Communication</p>
-                            </div>
-                        </div>
-                    </div>
+        <div class="timeline-container">
+            <!-- Timeline Line -->
+            <div class="timeline-line"></div>
 
-                    <div class="exp-tech-section">
-                        <h5><i class='bx bx-code-block'></i> Core Technologies Used</h5>
-                        <div class="exp-tech-badges">
-                            <span class="tech-badge">Laravel</span>
-                            <span class="tech-badge">React.js</span>
-                            <span class="tech-badge">PHP</span>
-                            <span class="tech-badge">JavaScript</span>
-                            <span class="tech-badge">MySQL</span>
-                            <span class="tech-badge">Bootstrap</span>
-                            <span class="tech-badge">GitHub</span>
-                        </div>
+            <!-- Experience Entry 1 -->
+            <div class="timeline-item reveal">
+                <div class="timeline-dot">
+                    <i class='bx bx-briefcase-alt-2'></i>
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-date">
+                        <i class='bx bx-calendar-event'></i> Jan 2026 - Present
+                    </div>
+                    <h3>Full Stack Developer Intern</h3>
+                    <div class="timeline-company">
+                        <i class='bx bx-buildings'></i> Darshan Digital Solutions
+                    </div>
+                    <p class="timeline-description">
+                        Developed and enhanced web applications using PHP, Laravel, MySQL, HTML, CSS, and JavaScript. Worked on CRM and DMS-based web applications and implemented application features based on project requirements.
+                    </p>
+                    <div class="timeline-contributions">
+                        <h4>Key Responsibilities:</h4>
+                        <ul>
+                            <li>Developed responsive and user-friendly interfaces for web applications</li>
+                            <li>Worked with Laravel MVC architecture for backend development</li>
+                            <li>Integrated frontend interfaces with backend logic and MySQL databases</li>
+                            <li>Performed debugging, testing, and bug fixing to improve application functionality</li>
+                            <li>Participated in requirement understanding and gathered client/project requirements</li>
+                            <li>Collaborated with team members to implement and improve application features</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-ba">
+                        <h4>Business Analysis Exposure:</h4>
+                        <ul>
+                            <li>Requirement Gathering & Analysis</li>
+                            <li>Understanding Client Requirements & Business Process</li>
+                            <li>Functional Requirement Analysis & Documentation</li>
+                            <li>Problem Identification & Communication with Team/Clients</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-tech">
+                        <span class="tech-badge">PHP</span>
+                        <span class="tech-badge">Laravel</span>
+                        <span class="tech-badge">MySQL</span>
+                        <span class="tech-badge">JavaScript</span>
+                        <span class="tech-badge">HTML</span>
+                        <span class="tech-badge">CSS</span>
+                        <span class="tech-badge">Bootstrap</span>
+                        <span class="tech-badge">GitHub</span>
                     </div>
                 </div>
             </div>
 
-            <!-- RIGHT COLUMN: PROFESSIONAL ROLE DETAILS -->
-            <div class="experience-details reveal">
-                <div class="exp-job-card">
-                    <span class="timeline-date"><i class='bx bx-calendar-event'></i> Jan 2026 - Present (4
-                        Months)</span>
-                    <h3>Full Stack Developer Intern</h3>
-                    <div class="timeline-subtitle"><i class='bx bx-buildings'></i> Darshan Digital Solutions</div>
-
-                    <ul class="timeline-details">
-                        <li>
-                            Developed CRM and DMS applications using Laravel, PHP, MySQL, HTML, CSS, and JavaScript
-                        </li>
-                        <li>
-                            Built responsive and user-friendly interfaces
-                        </li>
-                        <li>
-                            Worked on backend MVC architecture and deployment
-                        </li>
-                        <li>
-                            Performed debugging, testing, and bug fixing
-                        </li>
-                        <li>
-                            Gathered client requirements and improved system functionality
-                        </li>
-                    </ul>
+            <!-- Experience Entry 2 - Projects -->
+            <div class="timeline-item reveal">
+                <div class="timeline-dot">
+                    <i class='bx bx-laptop'></i>
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-date">
+                        <i class='bx bx-calendar-event'></i> 2025 - 2026
+                    </div>
+                    <h3>Key Projects</h3>
+                    <div class="timeline-company">
+                        <i class='bx bx-code-alt'></i> Full Stack Web Development
+                    </div>
+                    <p class="timeline-description">
+                        Developed multiple full-stack web applications including CRM systems, placement portals, and e-commerce platforms. Focused on creating user-centric solutions with modern technologies.
+                    </p>
+                    <div class="timeline-contributions">
+                        <h4>Notable Projects:</h4>
+                        <ul>
+                            <li>CRM / Classroom Management System - Laravel-based system for managing enquiries, admissions, and student operations</li>
+                            <li>Placement Management System - Platform to streamline college placement process</li>
+                            <li>Online Food Ordering System - Web-based application for restaurant menu management and billing</li>
+                            <li>React Todo App - Modern task management application with React Hooks</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-tech">
+                        <span class="tech-badge">Laravel</span>
+                        <span class="tech-badge">React.js</span>
+                        <span class="tech-badge">PHP</span>
+                        <span class="tech-badge">MySQL</span>
+                        <span class="tech-badge">JavaScript</span>
+                        <span class="tech-badge">HTML5</span>
+                        <span class="tech-badge">CSS3</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -290,37 +354,46 @@
     <section class="education" id="education">
         <h2 class="heading reveal">My <span>Education</span></h2>
 
-        <div class="education-grid reveal-stagger">
-            <!-- MCA -->
-            <div class="edu-card" id="edu-mca">
-                <span class="edu-year">2024 - 2026</span>
-                <h3 class="edu-degree">MCA</h3>
-                <p class="edu-school">Suryadatta Institute Of Management and Mass Communication, Pune</p>
-                <div class="edu-score">CGPA: 8.35</div>
+        <div class="timeline-container">
+            <!-- Timeline Line -->
+            <div class="timeline-line"></div>
+
+            <!-- Education Entry 1: MCA -->
+            <div class="timeline-item reveal">
+                <div class="timeline-dot">
+                    <i class='bx bxs-graduation'></i>
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-date">
+                        <i class='bx bx-calendar-event'></i> 2024 - 2026
+                    </div>
+                    <h3>Master of Computer Applications (MCA)</h3>
+                    <div class="timeline-company">
+                        <i class='bx bx-buildings'></i> Suryadatta Institute of Management and Mass Communication, Pune
+                    </div>
+                    <p class="timeline-description">
+                        <strong>CGPA:</strong> 8.52
+                    </p>
+                </div>
             </div>
 
-            <!-- BCA -->
-            <div class="edu-card" id="edu-bca">
-                <span class="edu-year">2021 - 2024</span>
-                <h3 class="edu-degree">BCA</h3>
-                <p class="edu-school">Dhote Bandhu Science College, Gondia</p>
-                <div class="edu-score">71.02%</div>
-            </div>
-
-            <!-- 12TH -->
-            <div class="edu-card" id="edu-12th">
-                <span class="edu-year">2021</span>
-                <h3 class="edu-degree">12th Grade</h3>
-                <p class="edu-school">Dhote Bandhu Science College, Gondia</p>
-                <div class="edu-score">84.78%</div>
-            </div>
-
-            <!-- 10TH -->
-            <div class="edu-card" id="edu-10th">
-                <span class="edu-year">2019</span>
-                <h3 class="edu-degree">10th Grade</h3>
-                <p class="edu-school">Adarsh Vidyalaya Gondmohadi</p>
-                <div class="edu-score">78.80%</div>
+            <!-- Education Entry 2: BCA -->
+            <div class="timeline-item reveal">
+                <div class="timeline-dot">
+                    <i class='bx bxs-graduation'></i>
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-date">
+                        <i class='bx bx-calendar-event'></i> 2021 - 2024
+                    </div>
+                    <h3>Bachelor of Computer Applications (BCA)</h3>
+                    <div class="timeline-company">
+                        <i class='bx bx-buildings'></i> Dhote Bandhu Science College, Gondia
+                    </div>
+                    <p class="timeline-description">
+                        <strong>Percentage:</strong> 71.02%
+                    </p>
+                </div>
             </div>
         </div>
     </section>
@@ -330,42 +403,160 @@
         <h2 class="heading reveal">Featured <span>Projects</span></h2>
 
         <div class="projects-grid reveal-stagger">
-            <!-- KHANDYAASANSKRUTI BILLING SYSTEM -->
-            <div class="project-card" id="project-khandya-billing">
-                <a href="https://github.com/prachiagashe/KhandyaaSanskruti-billing-system" target="_blank"
-                    rel="noopener noreferrer" class="card-link" aria-label="View Project on GitHub"></a>
+            <!-- PROJECT 1 -->
+            <div class="project-card">
                 <div class="project-img-container">
                     <div class="project-github-badge">
                         <i class='bx bxl-github'></i>
                     </div>
                     <div class="project-img-placeholder">
-                        <i class='bx bx-dish'></i>
-                        <span>Billing & CRM Portal</span>
+                        <i class='bx bx-laptop'></i>
+                        <span>Classroom Management</span>
                     </div>
                 </div>
                 <div class="project-info">
-                    <h3>KhandyaaSanskruti Billing System</h3>
-                    <p>
-                        A restaurant management application with an integrated admin panel to manage menu items, track
-                        orders, and control restaurant operations, along with a smooth customer ordering interface.
+                    <h3>CRM / Classroom Management System</h3>
+                    <p class="project-desc">
+                        <strong>Description:</strong> Developed a Laravel-based classroom management system to manage enquiries, follow-ups, admissions, fees, attendance, employees, and student-related operations.
                     </p>
+                    <div class="project-contribution">
+                        <strong>My Contribution:</strong>
+                        <ul>
+                            <li>Developed backend modules using Laravel</li>
+                            <li>Designed database relationships using MySQL</li>
+                            <li>Implemented authentication and role-based functionality</li>
+                            <li>Developed CRUD operations</li>
+                            <li>Worked on enquiry, follow-up and admission workflows</li>
+                            <li>Improved user interface and application functionality</li>
+                        </ul>
+                    </div>
                     <div class="project-tech">
-                        <span class="tech-badge">PHP</span>
                         <span class="tech-badge">Laravel</span>
-                        <span class="tech-badge">Blade</span>
+                        <span class="tech-badge">PHP</span>
                         <span class="tech-badge">MySQL</span>
+                        <span class="tech-badge">HTML</span>
+                        <span class="tech-badge">CSS</span>
                         <span class="tech-badge">JavaScript</span>
                     </div>
-                    <div class="project-links">
-                        <span class="btn">View Project <i class='bx bx-right-arrow-alt'></i></span>
+                    <div class="project-links-group">
+                        <a href="#" class="btn btn-outline" target="_blank" rel="noopener noreferrer">GitHub <i class='bx bxl-github'></i></a>
+                        <a href="#" class="btn" target="_blank" rel="noopener noreferrer">Live Demo <i class='bx bx-link-external'></i></a>
                     </div>
                 </div>
             </div>
 
-            <!-- FLOWER -->
-            <div class="project-card" id="project-flower">
-                <a href="https://github.com/prachiagashe/Flower" target="_blank" rel="noopener noreferrer"
-                    class="card-link" aria-label="View Project on GitHub"></a>
+            <!-- PROJECT 2 -->
+            <div class="project-card">
+                <div class="project-img-container">
+                    <div class="project-github-badge">
+                        <i class='bx bxl-github'></i>
+                    </div>
+                    <div class="project-img-placeholder">
+                        <i class='bx bx-briefcase'></i>
+                        <span>Placement Portal</span>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Placement Management System</h3>
+                    <p class="project-desc">
+                        <strong>Description:</strong> A comprehensive platform to streamline the college placement process, bridging the gap between students, training & placement officers, and recruiters.
+                    </p>
+                    <div class="project-contribution">
+                        <strong>My Contribution:</strong>
+                        <ul>
+                            <li>Built user portals for students and recruiters</li>
+                            <li>Designed database schemas for tracking applicant statuses</li>
+                            <li>Integrated automated email notifications for interview scheduling</li>
+                            <li>Ensured data validation and security protocols</li>
+                        </ul>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-badge">PHP</span>
+                        <span class="tech-badge">MySQL</span>
+                        <span class="tech-badge">JavaScript</span>
+                        <span class="tech-badge">Bootstrap</span>
+                    </div>
+                    <div class="project-links-group">
+                        <a href="#" class="btn btn-outline" target="_blank" rel="noopener noreferrer">GitHub <i class='bx bxl-github'></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJECT 3 -->
+            <div class="project-card">
+                <div class="project-img-container">
+                    <div class="project-github-badge">
+                        <i class='bx bxl-github'></i>
+                    </div>
+                    <div class="project-img-placeholder">
+                        <i class='bx bx-restaurant'></i>
+                        <span>Online Food Ordering</span>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Online Food Ordering System</h3>
+                    <p class="project-desc">
+                        <strong>Description:</strong> A web-based application for managing restaurant menus, taking customer orders, and processing administrative billing seamlessly.
+                    </p>
+                    <div class="project-contribution">
+                        <strong>My Contribution:</strong>
+                        <ul>
+                            <li>Designed a clean, user-friendly frontend menu interface</li>
+                            <li>Developed secure admin dashboard for order tracking</li>
+                            <li>Implemented cart and checkout functionality</li>
+                            <li>Optimized database queries for fast loading times</li>
+                        </ul>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-badge">Laravel</span>
+                        <span class="tech-badge">PHP</span>
+                        <span class="tech-badge">MySQL</span>
+                        <span class="tech-badge">JavaScript</span>
+                    </div>
+                    <div class="project-links-group">
+                        <a href="https://github.com/prachiagashe/KhandyaaSanskruti-billing-system" class="btn btn-outline" target="_blank" rel="noopener noreferrer">GitHub <i class='bx bxl-github'></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJECT 4 -->
+            <div class="project-card">
+                <div class="project-img-container">
+                    <div class="project-github-badge">
+                        <i class='bx bxl-github'></i>
+                    </div>
+                    <div class="project-img-placeholder">
+                        <i class='bx bx-calendar-check'></i>
+                        <span>Task Management</span>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>React Todo App</h3>
+                    <p class="project-desc">
+                        <strong>Description:</strong> A modern, dynamic task management application built with React, allowing users to organize daily tasks efficiently.
+                    </p>
+                    <div class="project-contribution">
+                        <strong>My Contribution:</strong>
+                        <ul>
+                            <li>Developed functional components and managed state with React Hooks</li>
+                            <li>Implemented date-wise sorting and filtering</li>
+                            <li>Designed responsive UI with CSS modules</li>
+                            <li>Ensured cross-browser compatibility</li>
+                        </ul>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-badge">React.js</span>
+                        <span class="tech-badge">JavaScript</span>
+                        <span class="tech-badge">CSS3</span>
+                    </div>
+                    <div class="project-links-group">
+                        <a href="https://github.com/prachiagashe/Todoapp-react" class="btn btn-outline" target="_blank" rel="noopener noreferrer">GitHub <i class='bx bxl-github'></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJECT 5 -->
+            <div class="project-card">
                 <div class="project-img-container">
                     <div class="project-github-badge">
                         <i class='bx bxl-github'></i>
@@ -376,82 +567,60 @@
                     </div>
                 </div>
                 <div class="project-info">
-                    <h3>Flower Store UI</h3>
-                    <p>
-                        An online flower store UI displaying flowers and flower pots with prices, discounts, and a clean
-                        user-friendly design.
+                    <h3>Flower Website</h3>
+                    <p class="project-desc">
+                        <strong>Description:</strong> A beautifully designed frontend interface for an online flower shop, showcasing product catalogs and promotional offers.
                     </p>
+                    <div class="project-contribution">
+                        <strong>My Contribution:</strong>
+                        <ul>
+                            <li>Crafted a visually appealing, responsive layout using modern CSS</li>
+                            <li>Implemented smooth scrolling and hover animations</li>
+                            <li>Optimized assets for faster page load</li>
+                        </ul>
+                    </div>
                     <div class="project-tech">
                         <span class="tech-badge">HTML5</span>
                         <span class="tech-badge">CSS3</span>
                         <span class="tech-badge">JavaScript</span>
-                        <span class="tech-badge">UI/UX</span>
                     </div>
-                    <div class="project-links">
-                        <span class="btn">View Project <i class='bx bx-right-arrow-alt'></i></span>
+                    <div class="project-links-group">
+                        <a href="https://github.com/prachiagashe/Flower" class="btn btn-outline" target="_blank" rel="noopener noreferrer">GitHub <i class='bx bxl-github'></i></a>
                     </div>
                 </div>
             </div>
 
-            <!-- TODOAPP-REACT -->
-            <div class="project-card" id="project-todoapp">
-                <a href="https://github.com/prachiagashe/Todoapp-react" target="_blank" rel="noopener noreferrer"
-                    class="card-link" aria-label="View Project on GitHub"></a>
+            <!-- PROJECT 6 -->
+            <div class="project-card">
                 <div class="project-img-container">
                     <div class="project-github-badge">
                         <i class='bx bxl-github'></i>
                     </div>
                     <div class="project-img-placeholder">
-                        <i class='bx bx-calendar-check'></i>
-                        <span>React Planner</span>
+                        <i class='bx bx-map-alt'></i>
+                        <span>Travel Booking</span>
                     </div>
                 </div>
                 <div class="project-info">
-                    <h3>Todoapp-react</h3>
-                    <p>
-                        A React todo application that lets users add and manage tasks date-wise using a calendar with a
-                        simple and clean UI.
+                    <h3>Adventure React Project</h3>
+                    <p class="project-desc">
+                        <strong>Description:</strong> A React-based web portal for exploring adventure travel destinations, featuring interactive galleries and booking workflows.
                     </p>
+                    <div class="project-contribution">
+                        <strong>My Contribution:</strong>
+                        <ul>
+                            <li>Built reusable UI components for tour packages</li>
+                            <li>Integrated routing for seamless page transitions</li>
+                            <li>Implemented dynamic data rendering from API endpoints</li>
+                        </ul>
+                    </div>
                     <div class="project-tech">
                         <span class="tech-badge">React.js</span>
-                        <span class="tech-badge">CSS3</span>
-                        <span class="tech-badge">JavaScript</span>
-                        <span class="tech-badge">Calendar API</span>
-                    </div>
-                    <div class="project-links">
-                        <span class="btn">View Project <i class='bx bx-right-arrow-alt'></i></span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- WEATHER-APP -->
-            <div class="project-card" id="project-weather">
-                <a href="https://github.com/prachiagashe/weather-app" target="_blank" rel="noopener noreferrer"
-                    class="card-link" aria-label="View Project on GitHub"></a>
-                <div class="project-img-container">
-                    <div class="project-github-badge">
-                        <i class='bx bxl-github'></i>
-                    </div>
-                    <div class="project-img-placeholder">
-                        <i class='bx bx-cloud-light-rain'></i>
-                        <span>Flask API Portal</span>
-                    </div>
-                </div>
-                <div class="project-info">
-                    <h3>Weather App</h3>
-                    <p>
-                        A web-based weather application built using Python (Flask) that fetches real-time weather data
-                        using the OpenWeather API and displays temperature, humidity, wind speed, and other details.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-badge">Python</span>
-                        <span class="tech-badge">Flask</span>
-                        <span class="tech-badge">OpenWeather API</span>
                         <span class="tech-badge">JavaScript</span>
                         <span class="tech-badge">CSS3</span>
                     </div>
-                    <div class="project-links">
-                        <span class="btn">View Project <i class='bx bx-right-arrow-alt'></i></span>
+                    <div class="project-links-group">
+                        <a href="#" class="btn btn-outline" target="_blank" rel="noopener noreferrer">GitHub <i class='bx bxl-github'></i></a>
                     </div>
                 </div>
             </div>
@@ -566,66 +735,41 @@
 
     <!-- CONTACT SECTION -->
     <section class="contact section-bg" id="contact">
-        <div class="contact-container reveal">
-            <div class="contact-info">
-                <h3>Let's work <span>together!</span></h3>
-                <p>
-                    I'm currently seeking new full-stack and junior web developer opportunities! If you have a question,
-                    a project collaboration idea, or simply want to connect, feel free to reach out using the form or
-                    direct links.
-                </p>
+        <div class="contact-wrapper reveal">
+            <h2 class="contact-heading">Let's <span>connect.</span></h2>
+            <p class="contact-subheading">Open to new opportunities and collaborations.</p>
 
-                <div class="contact-details">
-                    <!-- EMAIL -->
-                    <div class="contact-card">
-                        <div class="contact-icon"><i class='bx bx-envelope'></i></div>
-                        <div class="contact-text">
-                            <h4>Email Me</h4>
-                            <p><a href="mailto:prachiagashe621@gmail.com">prachiagashe621@gmail.com</a></p>
-                        </div>
+            <div class="contact-info-container">
+                <div class="contact-item">
+                    <div class="icon-text">
+                        <i class='bx bx-envelope'></i>
+                        <p>prachiagashe621@gmail.com</p>
                     </div>
-
-                    <!-- PHONE -->
-                    <div class="contact-card">
-                        <div class="contact-icon"><i class='bx bx-phone'></i></div>
-                        <div class="contact-text">
-                            <h4>Call Me</h4>
-                            <p><a href="tel:9356855036">+91 9356855036</a></p>
-                        </div>
+                    <i class='bx bx-copy copy-icon' onclick="copyToClipboard('prachiagashe621@gmail.com')"></i>
+                </div>
+                <div class="contact-item">
+                    <div class="icon-text">
+                        <i class='bx bx-phone'></i>
+                        <p>+91 9356855036</p>
                     </div>
-
-                    <!-- LOCATION -->
-                    <div class="contact-card">
-                        <div class="contact-icon"><i class='bx bx-map'></i></div>
-                        <div class="contact-text">
-                            <h4>Location</h4>
-                            <p>Pune, Maharashtra, India</p>
-                        </div>
+                    <i class='bx bx-copy copy-icon' onclick="copyToClipboard('+91 9356855036')"></i>
+                </div>
+                <div class="contact-item">
+                    <div class="icon-text">
+                        <i class='bx bx-map'></i>
+                        <p>Pune, Maharashtra, India</p>
                     </div>
+                </div>
+                <div class="contact-item link-item">
+                    <div class="icon-text">
+                        <i class='bx bxl-linkedin-square'></i>
+                        <p>LinkedIn Profile</p>
+                    </div>
+                    <a href="https://www.linkedin.com/in/prachi-agashe-731a822b5" target="_blank" rel="noopener noreferrer">
+                        <i class='bx bx-link-external'></i>
+                    </a>
                 </div>
             </div>
-
-            <!-- FEEDBACK/CONTACT FORM -->
-            <form action="#" class="contact-form" id="portfolio-contact-form">
-                <div class="form-group">
-                    <div class="input-box">
-                        <input type="text" placeholder="Full Name" required id="contact-name" />
-                    </div>
-                    <div class="input-box">
-                        <input type="email" placeholder="Email Address" required id="contact-email" />
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="input-box">
-                        <input type="tel" placeholder="Mobile Number" id="contact-phone" />
-                    </div>
-                    <div class="input-box">
-                        <input type="text" placeholder="Email Subject" required id="contact-subject" />
-                    </div>
-                </div>
-                <textarea name="message" placeholder="Your Message" required id="contact-message"></textarea>
-                <button type="submit" class="btn" id="contact-submit-btn">Send Message</button>
-            </form>
         </div>
     </section>
 
