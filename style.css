@@ -153,6 +153,12 @@ body {
     color: var(--text-color);
 }
 
+.nav-resume-btn {
+    padding: 0.6rem 1.5rem;
+    font-size: 1.3rem;
+    margin-left: 2rem;
+}
+
 #menu-icon {
     font-size: 3.2rem;
     color: var(--main-color);
@@ -168,6 +174,11 @@ section {
     background: transparent;
     /* Viewport double radial gradient shines organically through */
     position: relative;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .section-bg {
@@ -196,7 +207,7 @@ section {
 .home {
     min-height: 100vh;
     /* Forces home section to take up the full first fold screen */
-    padding: 14rem 9% 8rem;
+    padding: 12rem 9% 8rem;
     /* Dedicated padding to center hero content and clear header */
     display: flex;
     align-items: center;
@@ -442,7 +453,7 @@ section {
 .skills-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
-    gap: 3rem;
+    gap: 2.5rem;
     align-items: stretch;
 }
 
@@ -541,6 +552,18 @@ section {
     color: var(--accent-purple);
 }
 
+/* BA Cards Container - Vertical Layout */
+.ba-cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    grid-column: 1 / -1;
+}
+
+.ba-cards-container .skill-card {
+    width: 100%;
+}
+
 .skills-ba-intro {
     grid-column: 1 / -1;
     font-size: 1.5rem;
@@ -579,7 +602,7 @@ section {
 .timeline-item {
     position: relative;
     padding-left: 6rem;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     opacity: 0;
     transform: translateY(30px);
     transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
@@ -933,7 +956,7 @@ section {
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
-    gap: 4rem;
+    gap: 3rem;
 }
 
 .project-card {
@@ -1318,6 +1341,10 @@ section {
     html {
         font-size: 55%;
     }
+
+    .home-content h1 {
+        font-size: 4.5rem;
+    }
 }
 
 @media (max-width: 991px) {
@@ -1339,7 +1366,7 @@ section {
     }
 
     .home {
-        padding: 12rem 5% 6rem;
+        padding: 10rem 5% 6rem;
     }
 
     .home-content {
@@ -1364,6 +1391,11 @@ section {
     .footer {
         padding: 3rem 5%;
     }
+
+    .projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+        gap: 2.5rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1377,7 +1409,7 @@ section {
         left: 0;
         width: 100%;
         padding: 1.5rem 5%;
-        background: rgba(248, 250, 252, 0.95);
+        background: rgba(0, 0, 0, 0.95);
         backdrop-filter: blur(20px);
         border-top: 1px solid rgba(255, 255, 255, 0.03);
         border-bottom: 1px solid rgba(99, 102, 241, 0.15);
@@ -1411,7 +1443,6 @@ section {
         font-size: 50%;
     }
 
-
     .about-details {
         grid-template-columns: 1fr;
     }
@@ -1419,6 +1450,23 @@ section {
     .exp-highlights-grid {
         grid-template-columns: 1fr;
         gap: 2rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .timeline-item {
+        padding-left: 5rem;
+    }
+
+    .timeline-line {
+        left: 1.5rem;
+    }
+
+    .timeline-dot {
+        left: 1.2rem;
     }
 
     .exp-summary-card,
